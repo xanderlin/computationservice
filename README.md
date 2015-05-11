@@ -16,12 +16,16 @@ The current implementation has a few protocol differences from the proposed prot
 
 ## Usage
 The computation server relies on [Otto](https://github.com/robertkrimen/otto) for javascript execution. Start the server:
+```
     $ go build server.go
     $ ./server
-  
-Load the client, and in JavaScript Console
+```
+    
+Load the client, and in JavaScript Console:
+```
     > n1 = new Network("pod_name_1");
     > n2 = new Network("pod_name_2");
     > n1.start();
     > n2.start();
     > n1.request("pod_name_2");
+```
